@@ -409,7 +409,7 @@ function HeaderRight({ address, level }: { address: string, level: number }) {
     }
 
     const handleGoProClick = () => {
-        const url = process.env.SERVICES_ENV !== 'production' ? 'http://192.168.1.114:3001/?tab=price' : 'https://definder.info/?tab=price';
+        const url ='https://definder.info/?tab=price';
         window.open(url, '_blank');
     }
 

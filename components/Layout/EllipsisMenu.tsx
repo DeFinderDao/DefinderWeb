@@ -17,7 +17,7 @@ export default function EllipsisMenu() {
   const ellipsisMenu = (
     <Menu>
       <Menu.Item key="website">
-        <a className="menu-set-warning" target="_blank" href={process.env.SERVICES_ENV !== 'production' ? 'http://192.168.1.114:3001' : 'https://definder.info'}>
+        <a className="menu-set-warning" target="_blank" href={'https://definder.info'}>
           <svg className="icon" aria-hidden="true" style={{ width: '16px', height: '16px', marginRight: '16px' }}>
             <use xlinkHref="#icon-ellipsis-website"></use>
           </svg>
