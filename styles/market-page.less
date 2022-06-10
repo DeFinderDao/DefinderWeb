@@ -1,0 +1,269 @@
+@import './antd-custom-dark.less';
+.iconsItem {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.aLink {
+    text-decoration: underline;
+    color: #0090ff;
+}
+.market-page {
+    .menuBox {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        background-color: @body-bg-color;
+
+        .top-menu {
+            background: transparent;
+            padding-left: 20px;
+        }
+
+        .ant-menu .ant-menu-item {
+            padding-bottom: 8px;
+        }
+    }
+
+    .ant-menu {
+        width: 100%;
+        .ant-menu-item {
+            font-size: 18px !important;
+            color: #999;
+            margin-right: 70px !important;
+        }
+        .ant-menu-item-active,
+        .ant-menu-item-selecte {
+            color: #7377de;
+        }
+        .ant-menu-item-selected,
+        .ant-menu-item-selected > a,
+        .ant-menu-item-selected > a:hover {
+            color: #7377de;
+        }
+    }
+    .ant-table-tbody > tr > td {
+        height: 80px;
+    }
+    .attention-address {
+        .ant-table-tbody > tr > td {
+            cursor: pointer;
+        }
+    }
+    .no-more {
+        margin: 0;
+        justify-content: center;
+        &::before,
+        &::after {
+            width: 4%;
+            border-bottom: 1px solid @global-breadcrumb-color;
+            border-top: 0;
+            transform: translateY(-50%);
+        }
+        .ant-divider-inner-text {
+            font-size: 14px;
+            color: @global-breadcrumb-color;
+        }
+    }
+    .loading-box {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .market-table {
+        position: relative;
+        .ant-table-thead > tr > th {
+            padding: 15px 0px;
+            height: 50px;
+            line-height: 1;
+            .ant-table-column-sorters {
+                padding: 0;
+            }
+            &:last-child {
+                padding-right: 15px;
+            }
+        }
+    }
+    .virtual-grid-item {
+        cursor: pointer;
+        .g2-tooltip {
+            padding: 0 !important;
+            box-shadow: none !important;
+            .line-tooltip-box {
+                display: flex;
+                flex-direction: column;
+                color: @global-text-color-1;
+                background-color: @primary-color;
+                opacity: 0.6;
+                padding: 5px 10px;
+            }
+        }
+    }
+    .virtual-grid-item1 {
+        background-color: @table-row-zebra1-bg;
+    }
+    .virtual-grid-item2 {
+        background-color: @table-row-zebra2-bg;
+    }
+
+    .virtual-grid::-webkit-scrollbar {
+        display: block !important;
+        width: 0px !important;
+        height: 7px !important;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .virtual-grid-scrollbar::-webkit-scrollbar-thumb {
+        background: @primary-color;
+        border-radius: 10px;
+    }
+
+    // .virtual-grid { -ms-overflow-style: none; }
+
+    // .virtual-grid { overflow: -moz-scrollbars-none; }
+    .virtual-fix-grid::-webkit-scrollbar {
+        // width: 0 !important;
+    }
+
+    .virtual-fix-grid {
+        -ms-overflow-style: none;
+    }
+
+    .virtual-fix-grid {
+        overflow: -moz-scrollbars-none;
+    }
+
+    .discover-container {
+        .empty-container {
+            height: 162px !important;
+        }
+
+        .more-to-discover {
+            font-size: 14px;
+            color: @global-unit-color;
+            margin-left: 28px;
+            margin-top: 32px;
+            padding-bottom: 20px;
+        }
+
+        .ant-table-row {
+            cursor: pointer;
+        }
+
+        .ant-table-container table > thead > tr:first-child th:first-child {
+            padding-left: 20px;
+        }
+
+        .ant-table-container table > thead > tr:first-child th:last-child {
+            padding-right: 20px;
+        }
+
+        .ant-table-tbody > tr > td {
+            height: 32px;
+        }
+
+        .ant-row .ant-col:nth-child(odd) {
+            border-right: 1px solid @global-border-color;
+        }
+
+        .discover-item {
+            width: 100%;
+            border-bottom: 1px solid @global-border-color;
+            height: 100%;
+
+            .discover-item-title {
+                height: 70px;
+                display: flex;
+                justify-content: space-between;
+                padding-left: 15px;
+                padding-right: 30px;
+
+                .title-left {
+                    font-size: 18px;
+                    color: @global-text-color-2;
+                    padding-top: 24px;
+                }
+
+                .title-right {
+                    font-size: 10px;
+                    color: @global-unit-color;
+                    padding-top: 34px;
+                    flex-shrink: 0;
+                }
+            }
+            .discover-detail-item-title {
+                display: flex;
+                justify-content: flex-end;
+                padding-left: 30px;
+                padding-right: 30px;
+                .title-right {
+                    font-size: 10px;
+                    color: @global-unit-color;
+                }
+            }
+        }
+    }
+}
+
+.vip-pro-excard-dialog {
+    .ant-modal-header {
+        border-bottom: none;
+        background-color: transparent;
+    }
+
+    .ant-modal-body {
+        padding: 0px 24px 15px 24px;
+    }
+
+    .vip-pro-excard-title {
+        text-align: center;
+    }
+
+    .intro-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+
+        .item {
+            img {
+                margin-right: 5px;
+            }
+        }
+
+    }
+
+    .excard-content {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        
+        .excard {
+            width: 300px;
+            height: 40px;
+            line-height: 40px;
+            color: #BAC0C8;
+            align-items: center;
+            background-color: #2C353F;
+            text-align: center;
+            letter-spacing: 15px;
+            font-size: 16px;
+        }
+
+    }
+
+    .excard-button {
+
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        .use-excard-button {
+            min-width: 300px;
+            height: 40px;
+            border-radius: 0px;
+        }
+    }
+
+}

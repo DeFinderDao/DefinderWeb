@@ -1,0 +1,65 @@
+@import 'antd-custom-dark.less';
+.home {
+    width: 100%;
+    .top {
+        display: flex;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding: 15px 40px;
+        .type-select {
+            width: 160px;
+            margin-right: 50px;
+            & > div {
+                width: 100% !important;
+            }
+        }
+    }
+    .home-date-picker {
+        margin: 0;
+        width: 350px;
+    }
+    .table-content {
+        width: 100%;
+        padding: 15px 40px;
+        background-color: @body-bg-color;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 0px @global-box-shadow-color;
+        .ant-menu {
+            .ant-menu-item {
+                font-size: 16px;
+                color: #666666;
+                margin-right: 60px;
+            }
+            .ant-menu-item-active,
+            .ant-menu-item-selecte {
+                color: #7377de;
+            }
+            .ant-menu-item-selected,
+            .ant-menu-item-selected > a,
+            .ant-menu-item-selected > a:hover {
+                color: #7377de;
+            }
+        }
+        .ant-table-tbody > tr > td {
+            height: 42px;
+            cursor: pointer;
+        }
+        .no-more {
+            margin: 20px 0;
+            justify-content: center;
+            &::before,
+            &::after {
+                width: 4%;
+                border-color: @global-breadcrumb-color;
+            }
+            .ant-divider-inner-text{
+                font-size: 14PX;
+                color: @global-breadcrumb-color;
+            }
+        }
+        .loading-box{
+            margin-top: 40px;
+            text-align: center;
+        }
+    }
+}

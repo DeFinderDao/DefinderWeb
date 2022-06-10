@@ -1,0 +1,242 @@
+@import 'antd-custom-dark.less';
+
+.pay {
+    width: 100%;
+    height: 100%;
+
+    .no-login {
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+        color: #fff;
+        align-items: start;
+        padding-top: 200px;
+        display: flex;
+        justify-content: center;
+
+        .login-button {
+            color:#7377DE;
+            cursor: pointer;
+        }
+    }
+
+    .loading-content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+    }
+
+    .pay-content {
+
+        margin-left: 40px;
+        margin-top: 10px;
+
+        .info {
+            display: flex;
+
+            .center-border {
+                width: 1px;
+                height: 242px;
+                border-left: 1px solid #343D47;
+                margin-top: 60px;
+            }
+
+            .info-column {
+                flex: 1;
+                padding-left: 60px;
+
+                .info-column-title-zh {
+                    color: #636F7C;
+                    font-size: 16px;
+                    margin-right: 22px;
+                    width: 80px;
+                    display: inline-block;
+                    text-align: right;
+                }
+
+                .info-column-title {
+                    color: #636F7C;
+                    font-size: 16px;
+                    margin-right: 22px;
+                    width: 140px;
+                    display: inline-block;
+                    text-align: right;
+                }
+
+                .pay-discount {
+
+                    margin-top: 35px;
+
+                    .discount-input {
+                        width: 300px;
+                    }
+
+                    .pay-discount-error {
+                        color: #ff4d4f;
+                        margin-left: 80px;
+                        margin-top: 10px;
+                        display: none;
+                    }
+                }
+
+                .pro-type {
+                    margin-top: 20px;
+                    font-size: 16px;
+                    color: #fff;
+
+                    .ant-btn-default {
+                        color: #fff;
+                        border-color: #fff;
+                    }
+                }
+
+                .pro-type-buttons {
+                    margin-top: 16px;
+                    margin-left: 102px;
+
+                    .ant-btn {
+                        padding: 4px 18px;
+                    }
+
+                    .ant-btn-default {
+                        border: 1px solid #fff;
+                        color: #fff;
+                    }
+
+                    .ant-btn[disabled], .ant-btn[disabled]:hover, .ant-btn[disabled]:focus, .ant-btn[disabled]:active {
+                        color: rgba(255, 255, 255, 0.3);
+                        border-color: #2C353F;
+                    }
+                }
+
+                .invite-code {
+                    margin-top: 20px;
+
+                    input:focus-visible {
+                        outline:none;
+                    }
+                }
+
+                .invite-code-note {
+                    font-size: 12px;
+                    text-align: left;
+                    margin-top: 20px;
+                    margin-left: 100px;
+                    color: @global-text-color-5;
+                }
+
+                .pay-money {
+                    margin-top: 20px;
+                    font-size: 16px;
+                    color: #fff;
+
+                    .money-amount {
+                        font-size: 30px;
+                        margin-right: 5px;
+                    }
+                }
+
+                .pay-way {
+                    margin-top: 40px;
+
+                    .ant-radio-wrapper:first-child {
+                        margin-left: 0px !important;
+                    }
+
+                    .ant-radio-wrapper {
+                        border: 1px solid #fff;
+                        padding: 10px 25px;
+                        margin-left: 15px;
+                        border-radius: 6px;
+                    }
+
+                    .ant-radio-wrapper-checked {
+                        border: 1px solid @primary-color;
+                    }
+
+                }
+
+                .network-note {
+                    font-size: 12px;
+                    text-align: left;
+                    margin-top: 20px;
+                    margin-left: 100px;
+                    color: #fff;
+                }
+
+                .sure {
+                    margin-top: 57px;
+                    width: 200px;
+                    height: 54px;
+                    margin-left: 100px;
+                }
+            } 
+            
+            .pro-column {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .center-text {
+                    height: 112px;
+                    font-size: 80px;
+                    font-family: PingFangSC-Medium, PingFang SC;
+                    font-weight: 500;
+                    color: #222222;
+                    line-height: 112px;
+                    margin-top: 80px;
+                }
+
+                .pro-text {
+                    font-size: 40px;
+                    font-family: PingFangSC-Medium, PingFang SC;
+                    font-weight: 500;
+                    color: #222222;
+                    line-height: 56px;
+                }
+            }
+
+        }
+    }
+
+    .err-content {
+        width: 100%;
+        text-align: center;
+        margin-top: 200px;
+
+        .err-title {
+            color: #fff;
+            font-size: 18px;
+
+            img {
+                width: 40px;
+                height: 40px;
+                margin-right: 20px;
+            }
+        }
+
+        .retry-button {
+            margin-top: 45px;
+        }
+    }
+}
+
+.select-charge-chain-dialog {
+    .ant-modal-header {
+        text-align: center;
+        background-color: transparent;
+        border-bottom: none;
+    }
+
+    .footer {
+        margin-top: 40px;
+    }
+}
+
+.ant-modal-confirm .ant-modal-confirm-btns {
+    margin-top: 24px;
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,889 @@
+@import '../../styles/antd-custom-dark.less';
+
+.defi-layout {
+    height: 100vh;
+    #logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .defi-logo {
+            width: 158px;
+            height: 31px;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+    }
+
+    #defi-sidebar::-webkit-scrollbar {
+        width: 0 !important;
+    }
+
+    #defi-sidebar {
+        -ms-overflow-style: none;
+    }
+
+    #defi-sidebar {
+        overflow: -moz-scrollbars-none;
+    }
+
+    #defi-sidebar {
+        height: calc(100vh - 140px);
+        width: 235px;
+        padding: 0;
+        position: relative;
+        overflow-y: auto;
+        overflow-x: hidden;
+        z-index: 99;
+
+        .ant-menu {
+            border-bottom: none;
+        }
+
+        .ant-menu-inline-collapsed {
+            width: 80px;
+
+            .defi-menu-item {
+                padding-left: 24px !important;
+                padding-right: 24px !important;
+            }
+
+            .ant-menu-item-selected::after {
+                transform: scaleY(1);
+                opacity: 1;
+                transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1),
+                    opacity 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+            }
+        }
+
+        .ant-menu-inline {
+            .defi-menu-item {
+                padding-left: 24px !important;
+            }
+        }
+
+        .defi-menu {
+            border-right: 0;
+            .ant-menu-item-selected {
+                color: #fff;
+            }
+            .ant-menu-item-icon {
+                width: 32px;
+                height: 32px;
+            }
+
+            .defi-menu-item-border {
+                position: relative;
+                margin: 10px 0 30px;
+                &::before {
+                    content: '';
+                    border-bottom: 1px solid @global-border-color;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+
+        .defi-menu-border {
+            border-top: 1px solid @global-border-color;
+            padding-top: 40px;
+        }
+    }
+
+    .placeholder {
+        height: 60px;
+        background-color: @defi-bg-color;
+        box-shadow: 0px 0px 20px @defi-bg-color;
+    }
+
+    .defi-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: @body-bg-color;
+        height: 80px;
+        padding: 0 30px;
+        border-bottom: 1px solid @global-border-color;
+
+        .search-box {
+            width: 100%;
+            margin-left: 50px;
+
+            .ant-select-selector {
+                height: 100%;
+            }
+
+            .ant-select-selection-placeholder {
+                height: 46px;
+                line-height: 46px;
+            }
+
+            .ant-select-selection-search {
+                input {
+                    height: 100%;
+                }
+            }
+
+            .search-icon-holder {
+                position: absolute;
+                left: 480px;
+                top: 17px;
+
+                .search-icon-svg {
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    background-image: url('/images/search.svg');
+                }
+            }
+        }
+
+        .earn-usdt-container {
+            margin-right: 20px;
+            color: #fff;
+            border-color: #fff;
+        }
+
+        .user-logo {
+            width: 32px;
+            height: 32px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .user-address {
+            font-size: 16px;
+            color: #89979c;
+            cursor: pointer;
+            border: 1px solid @primary-color;
+            padding: 3px 15px;
+            border-radius: 8px;
+        }
+
+        .ellipsis-outlined {
+            border: 1px solid @primary-color;
+            padding: 4px 10px;
+            border-radius: 30px;
+        }
+
+        .open-wallet {
+            cursor: pointer;
+            background-color: @primary-color;
+            border-radius: 4px;
+            height: 32px;
+            line-height: 32px;
+            display: flex;
+            padding-right: 14px;
+            color: @global-text-color-1;
+
+            .wallet-icon-div {
+                width: 32px;
+                height: 32px;
+                background-color: #4f52af;
+                border-radius: 4px;
+                text-align: center;
+                margin-right: 16px;
+            }
+
+            .wallet-icon {
+                width: 16px;
+                height: 12px;
+            }
+        }
+
+        .defi-right-btns {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            min-width: 370px;
+
+            .ant-btn-primary:hover,
+            .ant-btn-primary:focus {
+                background: #7377de;
+                border-color: #7377de;
+            }
+
+            .defi-sign {
+                font-size: 16px;
+                color: #666;
+                cursor: pointer;
+                &:hover {
+                    color: #7377de;
+                }
+            }
+            .defi-register {
+                font-size: 16px;
+                color: #666;
+                cursor: pointer;
+                &:hover {
+                    color: #7377de;
+                }
+            }
+            .defi-usericon {
+                width: 30px;
+                height: 30px;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .defi-usermenu {
+        width: 100px;
+    }
+
+    .defi-body {
+        display: flex;
+        flex-direction: row;
+
+        ::-webkit-scrollbar {
+            display: none; /* Chrome Safari */
+        }
+
+        #troggle {
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 98px;
+            z-index: 99;
+            background-repeat: round;
+        }
+
+        .collapsed {
+            left: 28px;
+            background-image: url('/images/arrow-inline.svg');
+        }
+
+        .inline {
+            left: 155px;
+            background-image: url('/images/arrow-collapse.svg');
+        }
+
+        .move-left {
+            animation: move-left 0.4s;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+        }
+
+        .move-right {
+            animation: move-right 0.4s;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+        }
+    }
+
+    .logined-view {
+        width: 180px;
+        height: 32px;
+        border: 1px solid #d6dbf4;
+        background-color: white;
+        padding: 8px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .user-logo {
+            width: 14px;
+            height: 15px;
+        }
+
+        .user-phone {
+            font-size: 16px;
+            color: #666666;
+        }
+
+        .arrow-down {
+            width: 10px;
+            height: 5px;
+        }
+    }
+
+    .defi-content {
+        height: calc(100vh - 80px);
+        overflow: auto;
+        .defi-label {
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 0;
+        }
+    }
+}
+.data-source-box {
+    position: relative;
+    color: @global-unit-color;
+    margin-right: 40px;
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    span {
+        display: flex;
+        align-items: center;
+    }
+    .choose-box {
+        border: 1px solid #343d47;
+        border-radius: 6px;
+        width: 160px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid @global-border-color;
+        }
+    }
+}
+.data-source-list {
+    .ant-dropdown-arrow {
+        display: none;
+    }
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    span {
+        display: flex;
+        align-items: center;
+    }
+    .ant-dropdown-menu {
+        padding: 0;
+    }
+    .ant-dropdown-menu-item {
+        padding: 0;
+        width: 240px;
+        &:last-child {
+            .data-source-item {
+                align-items: center;
+                justify-content: center;
+                border-bottom: 0;
+            }
+        }
+    }
+    .data-source-item {
+        width: 100%;
+        cursor: pointer;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        border-bottom: 1px solid #000;
+        .soon {
+            display: flex;
+            margin-left: 10px;
+            padding: 0 10px;
+            background-color: #4f52af;
+            border-radius: 2px;
+        }
+    }
+}
+
+.top-header-right-dropdown {
+    top: 54px !important;
+
+    .loginout-view {
+        font-size: 16px;
+        color: #666666;
+        display: flex;
+        align-items: center;
+
+        .login-out-img {
+            width: 13px;
+            height: 14px;
+        }
+
+        .login-out-text {
+            margin: 0 auto;
+        }
+    }
+
+    .ant-dropdown-menu {
+        padding: 0;
+    }
+
+    .ant-dropdown-menu-item {
+        border: 1px solid #d6dbf4;
+    }
+}
+
+.defi-menu-item-tip-icon {
+    width: 30px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+@keyframes move-right {
+    0% {
+        transform: translateX(-235px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes move-left {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-235px);
+    }
+}
+
+.wallet-dialog {
+    .dialog-title {
+        font-size: 24px;
+        color: @global-text-color-1;
+        margin-left: 26px;
+        margin-top: 16px;
+    }
+
+    .dialog-title2 {
+        font-size: 16px;
+        color: @global-text-color-2;
+        margin-left: 26px;
+    }
+
+    .ant-modal-close-x {
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .wallet-column {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 26px;
+        margin-bottom: 10px;
+
+        .wallet-logo {
+            width: 48px;
+            height: 48px;
+            background-image: url('/images/ic_metamask.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .wallet-connect-logo {
+            width: 48px;
+            height: 48px;
+            background-image: url('/images/WalletConnect.svg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .wallet-title {
+            font-size: 14px;
+            color: #666666;
+            line-height: 48px;
+            margin-left: 15px;
+            flex: 2;
+        }
+
+        .address-status {
+            flex: 1.5;
+            text-align: right;
+            padding-right: 15px;
+
+            .wallet-address {
+                font-size: 14px;
+                color: #666666;
+                position: relative;
+
+                &::after {
+                    content: ' ';
+                    width: 5px;
+                    height: 5px;
+                    background-color: green;
+                    border-radius: 2.5px;
+                    position: absolute;
+                    right: -10px;
+                    top: 6px;
+                }
+            }
+        }
+
+        .connect-button {
+            width: 88px;
+            margin-right: 20px;
+        }
+    }
+
+    .unconnect-button {
+    }
+
+    .back-img {
+        width: 22px;
+        height: 30px;
+        padding: 5px;
+
+        img {
+            width: 12px;
+            height: 20px;
+        }
+    }
+
+    .dialog_title1 {
+        font-size: 24px;
+        color: @global-text-color-1;
+        text-align: center;
+        margin: 0;
+        line-height: 24px;
+    }
+
+    .dialog_title2 {
+        font-size: 14px;
+        color: @global-text-color-2;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+
+    .dialog_title3 {
+        font-size: 14px;
+        color: @global-text-color-2;
+        margin-left: 20px;
+        margin-right: 40px;
+        text-align: center;
+    }
+
+    .loading {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.user-guide-tip {
+    position: absolute;
+    top: 65px;
+    z-index: 1000;
+
+    animation-name: beat;
+    /*动画名称*/
+    animation-duration: 0.8s;
+    /*设置秒数*/
+    animation-timing-function: ease-in;
+    /*速度曲线*/
+    animation-iteration-count: infinite;
+    /*播放次数*/
+    animation-direction: alternate;
+    /*逆向播放*/
+    animation-play-state: running;
+
+    .user-guide-arrow {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: -4px;
+        right: 67px;
+        transform: rotate(136deg);
+        background: #7377de;
+    }
+
+    .user-guide-tip-content {
+        background: #7377de;
+        padding: 5px 15px;
+        border-radius: 4px;
+    }
+}
+
+@keyframes beat {
+    0% {
+        top: 65px;
+    }
+
+    100% {
+        top: 75px;
+    }
+}
+
+.set-warning-overlay {
+    .ant-dropdown-arrow {
+        border-top-color: #20282f;
+        border-left-color: #20282f;
+    }
+
+    .ant-dropdown-menu {
+        background-color: #20282f;
+        padding: 0px;
+    }
+
+    .menu-set-warning {
+        padding: 5px 15px;
+        font-size: 12px;
+        color: #89979c;
+        // height: 20px;
+        // line-height: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .ant-dropdown-menu-item {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 10px;
+    }
+
+    .ant-dropdown-menu-item {
+        border-bottom: 1px solid #2b3741;
+    }
+
+    .ant-dropdown-menu-item:last-child {
+        border-bottom: none;
+    }
+}
+
+.ant-carousel .slick-next::before {
+    display: none;
+}
+
+.ant-carousel .slick-prev::before {
+    display: none;
+}
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-prev:focus {
+    font-size: inherit;
+    left: 2px;
+    z-index: 2;
+    color: @global-text-color-6;
+    font-size: 32px;
+}
+
+.ant-carousel .slick-next,
+.ant-carousel .slick-next:hover,
+.ant-carousel .slick-next:focus {
+    font-size: inherit;
+    right: 12px;
+    z-index: 2;
+    color: @global-text-color-6;
+    font-size: 32px;
+}
+
+.welcome-user-guide-dialog {
+    border-radius: 8px;
+    padding-bottom: 0px;
+
+    .ant-modal-body {
+        padding: 0;
+        border-radius: 8px;
+    }
+
+    .guide-p1 {
+        text-align: center;
+        font-size: 18px;
+        padding-top: 40px;
+        margin-bottom: 0px;
+    }
+
+    .guide-p2 {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 0px;
+        color: @global-unit-color;
+    }
+
+    .guide-p3 {
+        text-align: center;
+        margin-top: 40px;
+        color: @primary-color;
+        font-size: 14px;
+    }
+
+    .guide-buttons {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+
+        .button-1 {
+            width: 300px;
+            height: 40px;
+            margin-top: 20px;
+        }
+
+        .button-gray {
+            border: 1px solid @global-border-color;
+            color: @global-text-color-5;
+        }
+
+        .button-4 {
+            width: 300px;
+            height: 40px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.teach-user-dialog {
+    border: 1px solid @global-border-color;
+    border-radius: 8px;
+
+    padding-bottom: 0px;
+
+    .ant-modal-body {
+        padding: 0;
+        border-radius: 8px;
+    }
+
+    .ant-carousel .slick-dots li.slick-active button {
+        background: @global-text-color-6;
+    }
+
+    .ant-carousel .slick-dots li button {
+        background: @primary-color-half;
+    }
+}
+
+.guide-finish-dialog {
+    .ant-modal-body {
+        padding: 0;
+        border-radius: 8px;
+    }
+
+    .title1 {
+        text-align: center;
+        font-size: 18px;
+        padding-top: 40px;
+        margin-bottom: 0px;
+
+        span {
+            color: @primary-color;
+        }
+    }
+
+    .figner-image {
+        margin-top: 20px;
+    }
+
+    .title2 {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 20px;
+        color: @global-unit-color;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .guide-buttons {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+
+        .learned-button {
+            width: 300px;
+            height: 40px;
+            margin-top: 20px;
+        }
+
+        .other-lesson-button {
+            width: 300px;
+            height: 40px;
+            margin-top: 20px;
+            border: 1px solid @global-border-color;
+            color: @global-text-color-5;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.ellipsis-img-box {
+    max-height: 224px;
+    overflow: hidden;
+}
+.ellipsis-text-num {
+    position: absolute;
+    right: 6px;
+    bottom: 5px;
+    color: @global-text-color-5;
+}
+
+.earn-usdt-dialog {
+    .ant-modal-header {
+        background-color: @popover-bg;
+        border-bottom: none;
+    }
+
+    .link {
+        text-decoration: underline;
+    }
+
+    .invite-link-container {
+        height: 35px;
+        border: 1px solid #fff;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    .share-link {
+
+    }
+
+    .share-buttons {
+
+    }
+
+    .footer {
+
+        .use-ex-card {
+            color: @primary-color;
+            cursor: pointer;
+        }
+
+    }
+}
+
+.excard-dialog {
+
+    .defi-excard-desc {
+        color: @global-text-color-5;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        
+        .card-item {
+
+            display: flex;
+            color: @global-text-color-4;
+            align-items: center;
+            background-color: @global-border-color;
+            padding: 5px;
+            border-radius: 6px;
+
+            .card-content {
+                flex: 1;
+                text-align: center;
+                letter-spacing: 15px;
+                font-size: 16px;
+            }
+
+        }
+    }
+
+    .expire-date {
+        text-align: right;
+        color: @global-text-color-5;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+}

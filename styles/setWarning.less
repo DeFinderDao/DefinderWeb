@@ -1,0 +1,91 @@
+@import './antd-custom-dark.less';
+.set-warning {
+    .contentContainer {
+        .tableAction {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 80px;
+        }
+    }
+    .addressTag-box {
+        display: flex;
+        align-items: center;
+        svg {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+        }
+    }
+    .action-box {
+        display: flex;
+        justify-content: flex-end;
+        svg {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            margin-left: 20px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.add-warning {
+    .ant-modal-body {
+        min-height: 520px;
+        padding: 40px 50px;
+        // padding-right: 90px;
+        .modal-title {
+            color: @global-text-color-1;
+            font-size: 24px;
+        }
+        .modal-item {
+            display: flex;
+            margin-bottom: 24px;
+            span {
+                font-size: 14px;
+            }
+            .item-tit {
+                width: 141px;
+                display: inline-block;
+                flex-shrink: 0;
+            }
+            .ant-input {
+                width: 580px;
+            }
+        }
+        .choose-box-item {
+            justify-content: space-between;
+        }
+        .btn-box {
+            text-align: center;
+            margin-top: 34px;
+        }
+    }
+}
+.ant-popover.pop-list {
+    .ant-popover-inner-content {
+        padding: 23px 35px 17px 28px;
+        box-shadow: 0px 0px 5px 0px @popover-box-shadow-color;
+        border-radius: 8px;
+        opacity: 0.8;
+        color: @popover-text-color;
+        border: 1px solid @primary-color;
+        span {
+            display: block;
+            color: #999999;
+            font-size: 12px;
+            text-align: left;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.ant-tooltip.modal-title-tips {
+    max-width: unset;
+}

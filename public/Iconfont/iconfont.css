@@ -1,0 +1,435 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2748649 */
+  src: url('iconfont.woff2?t=1653900843573') format('woff2'),
+       url('iconfont.woff?t=1653900843573') format('woff'),
+       url('iconfont.ttf?t=1653900843573') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ETH1:before {
+  content: "\e670";
+}
+
+.icon-invite:before {
+  content: "\e66e";
+}
+
+.icon-add-lp:before {
+  content: "\e66c";
+}
+
+.icon-remove-lp:before {
+  content: "\e66d";
+}
+
+.icon-nft-analyse-selected:before {
+  content: "\e66a";
+}
+
+.icon-nft-analyse:before {
+  content: "\e66b";
+}
+
+.icon-discord2:before {
+  content: "\e669";
+}
+
+.icon-upload-img:before {
+  content: "\e668";
+}
+
+.icon-ellipsis-help:before {
+  content: "\e665";
+}
+
+.icon-ellipsis-website:before {
+  content: "\e666";
+}
+
+.icon-ellipsis-suggestion:before {
+  content: "\e667";
+}
+
+.icon-telegram2:before {
+  content: "\e663";
+}
+
+.icon-twitter1:before {
+  content: "\e664";
+}
+
+.icon-guide:before {
+  content: "\e662";
+}
+
+.icon-metamask-fox:before {
+  content: "\e660";
+}
+
+.icon-icon-sm-selected:before {
+  content: "\e65e";
+}
+
+.icon-icon-sm:before {
+  content: "\e65f";
+}
+
+.icon-avalanche:before {
+  content: "\e654";
+}
+
+.icon-celo:before {
+  content: "\e655";
+}
+
+.icon-ETH:before {
+  content: "\e656";
+}
+
+.icon-BSC:before {
+  content: "\e657";
+}
+
+.icon-Fantom:before {
+  content: "\e65c";
+}
+
+.icon-polygon:before {
+  content: "\e65d";
+}
+
+.icon-menu-member:before {
+  content: "\e653";
+}
+
+.icon-market-discover:before {
+  content: "\e651";
+}
+
+.icon-market-discover-selected:before {
+  content: "\e652";
+}
+
+.icon-go-warning-setting:before {
+  content: "\e650";
+}
+
+.icon-telegram-push:before {
+  content: "\e64d";
+}
+
+.icon-email-push:before {
+  content: "\e64e";
+}
+
+.icon-web-push:before {
+  content: "\e64f";
+}
+
+.icon-chuangjiandizhi:before {
+  content: "\e643";
+}
+
+.icon-daezhuanru:before {
+  content: "\e644";
+}
+
+.icon-jianchi:before {
+  content: "\e645";
+}
+
+.icon-zengchi:before {
+  content: "\e646";
+}
+
+.icon-daezhuanchu:before {
+  content: "\e649";
+}
+
+.icon-daemaichu:before {
+  content: "\e64a";
+}
+
+.icon-shoucimairu:before {
+  content: "\e64b";
+}
+
+.icon-daemairu:before {
+  content: "\e64c";
+}
+
+.icon-zhiding:before {
+  content: "\e647";
+}
+
+.icon-warning-active:before {
+  content: "\e648";
+}
+
+.icon-filter-selected:before {
+  content: "\e642";
+}
+
+.icon-update_time:before {
+  content: "\e641";
+}
+
+.icon-reddit:before {
+  content: "\e63a";
+}
+
+.icon-github:before {
+  content: "\e63b";
+}
+
+.icon-telegram1:before {
+  content: "\e63c";
+}
+
+.icon-official-website:before {
+  content: "\e63d";
+}
+
+.icon-discord1:before {
+  content: "\e63e";
+}
+
+.icon-facebook:before {
+  content: "\e63f";
+}
+
+.icon-twitter:before {
+  content: "\e640";
+}
+
+.icon-definder-logo:before {
+  content: "\e639";
+}
+
+.icon-set-warning:before {
+  content: "\e638";
+}
+
+.icon-wallet:before {
+  content: "\e637";
+}
+
+.icon-user:before {
+  content: "\e631";
+}
+
+.icon-switch_language_gray:before {
+  content: "\e619";
+}
+
+.icon-address-analysis:before {
+  content: "\e617";
+}
+
+.icon-address-dynamic:before {
+  content: "\e610";
+}
+
+.icon-focus-address-selected:before {
+  content: "\e611";
+}
+
+.icon-address-dynamic-selected:before {
+  content: "\e61a";
+}
+
+.icon-hangqing:before {
+  content: "\e61b";
+}
+
+.icon-projects:before {
+  content: "\e621";
+}
+
+.icon-focus-address:before {
+  content: "\e623";
+}
+
+.icon-address-analysis-selected:before {
+  content: "\e626";
+}
+
+.icon-warning:before {
+  content: "\e628";
+}
+
+.icon-warning-selected:before {
+  content: "\e62b";
+}
+
+.icon-projects-selected:before {
+  content: "\e62d";
+}
+
+.icon-hangqing-selected:before {
+  content: "\e636";
+}
+
+.icon-share:before {
+  content: "\e635";
+}
+
+.icon-share-grey:before {
+  content: "\e66f";
+}
+
+.icon-in-market:before {
+  content: "\e60c";
+}
+
+.icon-right:before {
+  content: "\e60d";
+}
+
+.icon-outcoming:before {
+  content: "\e60e";
+}
+
+.icon-cancel-market:before {
+  content: "\e60f";
+}
+
+.icon-incoming:before {
+  content: "\e633";
+}
+
+.icon-trade:before {
+  content: "\e634";
+}
+
+.icon-filter:before {
+  content: "\e60a";
+}
+
+.icon-lp-detail:before {
+  content: "\e60b";
+}
+
+.icon-search-address:before {
+  content: "\e658";
+}
+
+.icon-search-definder:before {
+  content: "\e604";
+}
+
+.icon-youxiang:before {
+  content: "\e602";
+}
+
+.icon-dianhua:before {
+  content: "\e601";
+}
+
+.icon-gerenfill:before {
+  content: "\e632";
+}
+
+.icon-copy-blue:before {
+  content: "\e659";
+}
+
+.icon-collect_active:before {
+  content: "\e613";
+}
+
+.icon-board:before {
+  content: "\e614";
+}
+
+.icon-analyse_view:before {
+  content: "\e615";
+}
+
+.icon-delete:before {
+  content: "\e616";
+}
+
+.icon-definder_logo:before {
+  content: "\e618";
+}
+
+.icon-board_gray:before {
+  content: "\e61c";
+}
+
+.icon-discord:before {
+  content: "\e61d";
+}
+
+.icon-copy:before {
+  content: "\e61e";
+}
+
+.icon-collect:before {
+  content: "\e620";
+}
+
+.icon-edit:before {
+  content: "\e622";
+}
+
+.icon-set_warning:before {
+  content: "\e624";
+}
+
+.icon-lp_up:before {
+  content: "\e625";
+}
+
+.icon-lp_down:before {
+  content: "\e627";
+}
+
+.icon-token:before {
+  content: "\e629";
+}
+
+.icon-telegram:before {
+  content: "\e62a";
+}
+
+.icon-switch_language:before {
+  content: "\e62c";
+}
+
+.icon-etherscan:before {
+  content: "\e62e";
+}
+
+.icon-tuite:before {
+  content: "\e62f";
+}
+
+.icon-token_gray:before {
+  content: "\e630";
+}
+
+.icon-delete-white:before {
+  content: "\e65a";
+}
+
+.icon-copy-white:before {
+  content: "\e661";
+}
+
+.icon-edit-white:before {
+  content: "\e65b";
+}
+
+.icon-contract:before {
+  content: "\e61f";
+}
+

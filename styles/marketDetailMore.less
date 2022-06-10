@@ -1,0 +1,110 @@
+@import 'antd-custom-dark.less';
+.market-detail-more {
+    .tableAction {
+        position: relative;
+        display: flex;
+        align-items: center;
+        // justify-content: flex-end;
+        height: 100px;
+        left: -20px;
+        // width: calc(100% + 100px);
+        .tableTip {
+            position: relative;
+            left: 0;
+            top: 0;
+            flex-shrink: 0;
+        }
+    }
+    .tipTitle {
+        // margin-left: 134px;
+        color: #ff9300;
+        font-size: 12px;
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+    .btnBox {
+        padding-right: 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+        .no-more {
+            margin: 0;
+            justify-content: center;
+            &::before,
+            &::after {
+                width: 4%;
+                top: 0;
+                border-color: @global-breadcrumb-color;
+            }
+            .ant-divider-inner-text {
+                font-size: 14px;
+                color: @global-breadcrumb-color;
+            }
+        }
+    }
+
+    .ant-table {
+        width: 100% !important;
+    }
+    .market-SM-rate {
+        padding: 0 100px;
+        width: 100%;
+        margin-bottom: 20px;
+        .rate-name {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .rate-div {
+            position: relative;
+            height: 40px;
+            background-color: #5688ec;
+            border-radius: 5px;
+            .rate-box {
+                background-color: #0eab90;
+                position: absolute;
+                height: 40px;
+                z-index: 1000;
+                top: 0;
+                left: 0;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+        }
+    }
+
+    .currency-addr-rank-no-scroll {
+        overflow: auto;
+    }
+    .currency-addr-rank-scroll,.currency-addr-rank-no-scroll {
+        .ant-table-header.ant-table-sticky-holder {
+            overflow: visible !important;
+            & > table {
+                width: 1256px;
+            }
+        }
+        .ant-table-sticky-scroll {
+            display: none;
+        }
+    }
+    .currency-addr-rank-scroll::-webkit-scrollbar {
+        display: block !important;
+        width: 0px !important;
+        height: 7px !important;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .currency-addr-rank-scroll-true::-webkit-scrollbar-thumb {
+        background: @primary-color;
+        border-radius: 10px;
+    }
+    .currency-addr-rank-no-scroll::-webkit-scrollbar {
+        display: block !important;
+        width: 0px !important;
+        height: 7px !important;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .currency-addr-rank-no-scroll-true::-webkit-scrollbar-thumb {
+        background: @primary-color;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,111 @@
+@import './antd-custom-dark.less';
+.price-chart-container {
+
+    width: 100%;
+    min-height: 520px;
+    position: relative;
+    border-bottom: 1px solid @global-border-color;
+
+    .price-chart-header {
+
+        margin: 36px 40px 20px 40px;
+        display: flex;
+        justify-content: space-between;
+
+        .header-label {
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+
+    .price-chart-legend {
+
+        display: flex;
+        padding-left: 25px;
+        margin-top: 8px;
+
+        .price-chart-legend-item {
+
+            margin-left: 20px;
+            cursor: pointer;
+            color: @global-text-color-1;
+
+            .point {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                margin-right: 4px;
+                display: inline-block;
+                background-color: @global-text-color-5;
+            }
+
+            .line {
+                width: 20px;
+                height: 3px;
+                display: inline-block;
+                margin-right: 4px;
+            }
+
+            .square {
+                width: 10px;
+                height: 10px;
+                margin-right: 5px;
+            }
+
+            .legend-item-column-1 {
+                display: flex;
+                align-items: center;
+            }
+
+            .legend-item-column-2 {
+                font-size: 16px;
+            }
+
+        }
+
+        .price-chart-legend-item-disable {
+
+            color: @global-text-color-5;
+
+        }
+        
+    }
+
+    .chart-meta-data {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 20px;
+        margin-right: 34px;
+        background-color: #14181c;
+        border: 1px solid #343d47;
+        border-radius: 4px;
+
+        .meta-data-item {
+
+            padding: 10px 15px;
+
+            border-bottom: 1px solid #343d47;
+            
+            .title {
+                font-weight: bold;
+                margin-bottom: 8px;
+                font-size: 15px;
+            }
+
+            .value-column-1 {
+                display: flex;
+                align-items: center;
+            }
+
+            .value-column-2 {
+                color: @global-text-color-5;
+            }
+        }
+
+        .meta-data-item:last-child {
+            border-bottom: none;
+        }
+    }
+}

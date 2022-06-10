@@ -1,0 +1,144 @@
+@import 'antd-custom-dark.less';
+.search-box {
+    display: flex;
+}
+
+.search-list {
+    width: 100%;
+    display: flex;
+}
+
+.search-symbol {
+    margin: 0 30px 0 0;
+    width: 15.49%;
+}
+
+.group-name {
+    width: 69%;
+}
+
+.search-btn {
+    flex-shrink: 0;
+    padding: 0 0 0 20px;
+}
+
+.table-action {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100px;
+}
+
+.table-action button {
+    margin: 0 22px;
+}
+
+.group-address-box {
+    padding: 0 10px 10px;
+    height: 200px;
+    overflow: auto;
+}
+
+.form-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0 20px;
+}
+
+.delete-dialog {
+    padding: 16px 26px;
+    font-size: 14px;
+}
+
+.delete-dialog-title {
+    font-size: 24px;
+    color: @global-unit-color;
+    font-weight: bold;
+}
+
+.delete-dialog-desc {
+    color: #666;
+}
+
+.delete-dialog-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.group-address-item {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.a-link {
+    text-decoration: underline;
+    color: #0090ff;
+}
+
+.icons-box {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.icons-item {
+    width: 15.98px;
+    height: 15.96px;
+    cursor: pointer;
+}
+
+.modal-title {
+    padding: 5px 0 10px;
+    color: @global-text-color-1;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menuBox {
+    .top-menu {
+        background: transparent;
+        padding-left: 20px;
+    }
+
+    .ant-menu .ant-menu-item {
+        padding-bottom: 8px;
+    }
+}
+.action-dropdown {
+    background-color: #20282f;
+    box-shadow: 0px 0px 20px #000000;
+    .action-dropdown-item {
+        padding: 13px 14px 11px;
+        border-bottom: 1px solid #2b3741;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &:last-child {
+            border-bottom: 0;
+        }
+        .action-dropdown-icon {
+            width: 16px;
+            height: 16px;
+        }
+        .action-dropdown-label {
+            font-size: 12px;
+            color: @global-text-color-2;
+            margin-left: 14px;
+        }
+    }
+}
+
+.position-box {
+    background: #ccd3db;
+    border-radius: 3px;
+    width: 100px;
+    height: 6px;
+    margin-right: 10px;
+    .position-item {
+        height: 6px;
+        border-radius: 3px;
+        background-color: #e18042;
+    }
+}

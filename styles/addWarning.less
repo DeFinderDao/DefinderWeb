@@ -1,0 +1,37 @@
+@import './antd-custom-dark.less';
+.add-warning {
+    .ant-modal-body {
+        padding: 40px 50px;
+        // padding-right: 90px;
+        .modal-title {
+            color: @global-text-color-1;
+            font-size: 24px;
+        }
+        .modal-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            span {
+                font-size: 14px;
+            }
+            .item-tit {
+                width: 141px;
+                display: inline-block;
+                flex-shrink: 0;
+            }
+            .ant-input {
+                width: 580px;
+            }
+        }
+        .choose-box-item {
+            justify-content: space-between;
+        }
+        .btn-box {
+            text-align: center;
+            margin-top: 34px;
+        }
+    }
+}
+.ant-tooltip.modal-title-tips {
+    max-width: unset;
+}

@@ -1,0 +1,49 @@
+@import '../antd-custom-dark.less';
+.comparison {
+    .table-box {
+        min-height: 110px;
+    }
+    .comparison-bar-box {
+        margin-top: 40px;
+        .comparison-bar-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            p {
+                color: @global-text-color-2;
+                font-size: 14px;
+                white-space: pre-wrap;
+                margin: 0;
+                min-width: 140px;
+            }
+            .bar-box {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 24px;
+                margin: 0 10px;
+                .out-bar {
+                    display: flex;
+                    height: 24px;
+                    width: 100%;
+                    .in-bar {
+                        height: 24px;
+                        color: #fff;
+                        padding: 0 8px;
+                    }
+                    .green-bar {
+                        background-color: #1fa300;
+                        text-align: right;
+                    }
+                    .red-bar {
+                        background-color: #ef6d59;
+                    }
+                }
+                .out-bar:first-child {
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}
